@@ -204,11 +204,6 @@ gaps inner 7
 gaps outer 1
 #gaps horizontal 2
 
-################# i3-radius #######################
-smart_borders on
-smart_borders no_gaps
-border_radius 5
-
 # Background wallpapers (First using Feh, second using Nitrogen)
 # exec_always --no-startup-id feh --bg-center --randomize ~/Área\ de\ trabalho/wallpps/*
 exec nitrogen --restore
@@ -217,11 +212,11 @@ exec nitrogen --restore
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Executing compton for opacity
-exec_always --no-startup-id compton
+exec --no-startup-id compton
 # Executing synapse
-exec_always --no-startup-id synapse -s
+exec --no-startup-id synapse -s
 # Executing qlipper
-exec_always --no-startup-id qlipper
+exec --no-startup-id qlipper
 # Executing redshift
 exec --no-startup-id redshift
 
