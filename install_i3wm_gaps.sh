@@ -11,5 +11,7 @@ cd i3-gaps
 mkdir -p build && cd build
 meson ..
 ninja
-meson install
+sudo meson install
 
+cd ../..
+sudo rm -rf i3-gaps
