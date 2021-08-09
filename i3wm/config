@@ -219,13 +219,16 @@ exec --no-startup-id synapse -s
 exec --no-startup-id qlipper
 # Executing redshift
 exec --no-startup-id redshift
+# Executing by default the work display environment 
+exec --no-startup-id autorandr -l work
+
 
 # lock screen
 bindsym $MOD+SHIFT+x exec i3lock -c 000000
 
 # brightness buttons
-bindsym XF86MonBrightnessUp exec brightnessctl s 10+
-bindsym XF86MonBrightnessDown exec brightnessctl s 10-
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
 
 bindsym $MOD+SHIFT+bracketleft exec bmin
 bindsym $MOD+SHIFT+bracketright exec bmax
@@ -261,3 +264,4 @@ bindsym $mod+p [instance="dropdown_python"] scratchpad show, move position 300 0
 for_window [instance="dropdown_python"] floating enable
 for_window [instance="dropdown_python"] move scratchpad
 for_window [instance="dropdown_python"] resize set 800 200
+

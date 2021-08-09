@@ -1,4 +1,7 @@
-#!/usr/bin/sh
+#!/usr/bin/env bash
+
+# First call minimal dependencies to install the basic os tools (git, vim, neovim, etc)
+sudo ./minimal-installation.sh
 
 # Install dependencies
 sudo apt install i3 dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev meson ninja-build
